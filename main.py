@@ -65,7 +65,7 @@ def setSymbolCell(cell):
     winnerCheck()
 
 def newGame():
-    ui.field = [ ' ' for i in range(9) ]
+    ui.field = [' ' for _ in range(9)]
     ui.btn_Cell_1.setText('')
     ui.btn_Cell_2.setText('')
     ui.btn_Cell_3.setText('')
@@ -90,7 +90,7 @@ if __name__ == "__main__":
     ui.setupUi(TicTacToe_GUI)
     TicTacToe_GUI.show()
 
-    ui.field = [ ' ' for i in range(9) ]
+    ui.field = [' ' for _ in range(9)]
     ui.players = ['X', 'O']
     ui.whoseMove = 0
     ui.step = 0
